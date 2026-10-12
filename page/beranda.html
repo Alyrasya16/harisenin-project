@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chill - Streaming Film & Series</title>
+    <link rel="stylesheet" href="/styles/beranda.css" />
+  </head>
+  <body>
+    <!-- ========================================================================== -->
+    <!-- KOMPONEN: HEADER / NAVBAR & MENU NAVIGASI -->
+    <!-- ========================================================================== -->
+    <header class="site-header">
+      <div class="header-container">
+        <div class="header-nav">
+          <div class="logo">
+            <img
+              src="/assets/items/logo-movie.png"
+              alt="Logo Icon"
+              class="mobile-only"
+            />
+            <img
+              src="/assets/items/logo-text-movie.png"
+              alt="Logo Text"
+              class="desktop-only"
+            />
+          </div>
+
+          <nav class="main-nav">
+            <ul>
+              <li><a href="#series">Series</a></li>
+              <li><a href="#film">Film</a></li>
+              <li><a href="#daftar-saya">Daftar Saya</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="user-profile">
+          <div class="avatar-dropdown">
+            <img
+              src="/assets/items/user-icon.png"
+              alt="Avatar Profil"
+              class="avatar-img"
+            />
+            <img
+              src="/assets/items/arrow-bottom.png"
+              alt="Arrow Bottom"
+              class="arrow-bottom"
+            />
+          </div>
+          <div class="dropdown-menu">
+            <a href="#">Profil Saya</a>
+            <a href="#">Ubah Premium</a>
+            <a href="#">Keluar</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ========================================================================== -->
+    <!-- KOMPONEN: MAIN CONTENT (UTAMA) -->
+    <!-- ========================================================================== -->
+    <main class="main-content">
+      <!-- -------------------------------------------------------------------------- -->
+      <!-- SECTION 1: HERO SECTION -->
+      <!-- -------------------------------------------------------------------------- -->
+      <section class="hero-section">
+        <div class="hero-background">
+          <img
+            src="/assets/poster-horizontal/poster-horizontal-duty-after.png"
+            alt="Duty After School"
+          />
+        </div>
+        <div class="hero-content">
+          <div>
+            <h1 class="hero-title">Duty After School</h1>
+            <p class="hero-description">
+              Sebuah benda tak dikenal mengambil alih dunia. Dalam keputusasaan,
+              Departemen Pertahanan mulai merekrut lebih banyak tentara,
+              termasuk siswa sekolah menengah. Mereka pun segera menjadi pejuang
+              garis depan dalam perang.
+            </p>
+          </div>
+          <div class="hero-bottoms-main">
+            <div class="hero-buttons">
+              <button class="btn btn-primary">Mulai</button>
+              <button class="btn btn-secondary">Selengkapnya</button>
+              <span class="badge-age">18+</span>
+            </div>
+            <div class="hero-controls">
+              <button class="volume-btn" aria-label="Kontrol Volume">
+                <img src="/assets/items/logo-mute.png" alt="volume-logo" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- -------------------------------------------------------------------------- -->
+      <!-- SECTION 2: MELANJUTKAN TONTON FILM (HORIZONTAL CARDS) -->
+      <!-- -------------------------------------------------------------------------- -->
+      <section class="movie-row-section">
+        <div class="section-header-row">
+          <h2 class="section-title">Melanjutkan Tonton Film</h2>
+        </div>
+        <div class="slider-arrows desktop-only">
+          <button class="arrow-btn" aria-label="Sebelumnya">
+            <img src="/assets/items/arrow-left.png" alt="Prev" />
+          </button>
+          <button class="arrow-btn" aria-label="Berikutnya">
+            <img src="/assets/items/arrow-right.png" alt="Next" />
+          </button>
+        </div>
+        <div class="movie-row movie-continue">
+          <div class="continue-card">
+            <img
+              src="/assets/poster-horizontal/poster-horizontal-dont-look-up.png"
+              alt="Don't Look Up"
+            />
+            <div class="wrapper-info">
+              <div class="movie-info">
+                <span class="movie-title">Don't Look Up</span>
+                <span class="movie-rating">⭐ 4.5/5</span>
+              </div>
+            </div>
+          </div>
+          <div class="continue-card">
+            <img
+              src="/assets/poster-horizontal/poster-horizontal-all-of-us-are-dead.png"
+              alt="All of Us Are Dead"
+            />
+            <div class="wrapper-info">
+              <div class="movie-info">
+                <span class="movie-title">All of Us Are Dead</span>
+                <span class="movie-rating">⭐ 4.2/5</span>
+              </div>
+            </div>
+          </div>
+          <div class="continue-card">
+            <img
+              src="/assets/poster-horizontal/poster-horizontal-bluelock.png"
+              alt="Bluelock"
+            />
+            <span class="badge-episode-horizontal">Episode Baru</span>
+            <div class="wrapper-info">
+              <div class="movie-info">
+                <span class="movie-title">Bluelock</span>
+                <span class="movie-rating">⭐ 4.6/5</span>
+              </div>
+            </div>
+          </div>
+          <div class="continue-card">
+            <img
+              src="/assets/poster-horizontal/poster-horizontal-a-man-called-otto.png"
+              alt="A Man Called Otto"
+            />
+            <div class="wrapper-info">
+              <div class="movie-info">
+                <span class="movie-title">A Man Called Otto</span>
+                <span class="movie-rating">⭐ 4.5/5</span>
+              </div>
+            </div>
+          </div>
+          <div class="continue-card">
+            <img
+              src="/assets/poster-horizontal/poster-horizontal-a-man-called-otto.png"
+              alt="A Man Called Otto"
+            />
+            <div class="wrapper-info">
+              <div class="movie-info">
+                <span class="movie-title">A Man Called Otto</span>
+                <span class="movie-rating">⭐ 4.5/5</span>
+              </div>
+            </div>
+          </div>
+          <div class="continue-card">
+            <img
+              src="/assets/poster-horizontal/poster-horizontal-a-man-called-otto.png"
+              alt="A Man Called Otto"
+            />
+            <div class="wrapper-info">
+              <div class="movie-info">
+                <span class="movie-title">A Man Called Otto</span>
+                <span class="movie-rating">⭐ 4.5/5</span>
+              </div>
+            </div>
+          </div>
+          <div class="continue-card">
+            <img
+              src="/assets/poster-horizontal/poster-horizontal-a-man-called-otto.png"
+              alt="A Man Called Otto"
+            />
+            <div class="wrapper-info">
+              <div class="movie-info">
+                <span class="movie-title">A Man Called Otto</span>
+                <span class="movie-rating">⭐ 4.5/5</span>
+              </div>
+            </div>
+          </div>
+          <div class="continue-card">
+            <img
+              src="/assets/poster-horizontal/poster-horizontal-a-man-called-otto.png"
+              alt="A Man Called Otto"
+            />
+            <div class="wrapper-info">
+              <div class="movie-info">
+                <span class="movie-title">A Man Called Otto</span>
+                <span class="movie-rating">⭐ 4.5/5</span>
+              </div>
+            </div>
+          </div>
+          <div class="continue-card">
+            <img
+              src="/assets/poster-horizontal/poster-horizontal-a-man-called-otto.png"
+              alt="A Man Called Otto"
+            />
+            <div class="wrapper-info">
+              <div class="movie-info">
+                <span class="movie-title">A Man Called Otto</span>
+                <span class="movie-rating">⭐ 4.5/5</span>
+              </div>
+            </div>
+          </div>
+          <div class="continue-card">
+            <img
+              src="/assets/poster-horizontal/poster-horizontal-a-man-called-otto.png"
+              alt="A Man Called Otto"
+            />
+            <div class="wrapper-info">
+              <div class="movie-info">
+                <span class="movie-title">A Man Called Otto</span>
+                <span class="movie-rating">⭐ 4.5/5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- -------------------------------------------------------------------------- -->
+      <!-- SECTION 3: TOP RATING FILM DAN SERIES HARI INI -->
+      <!-- -------------------------------------------------------------------------- -->
+      <section class="movie-row-section">
+        <div class="section-header-row">
+          <h2 class="section-title">Top Rating Film dan Series Hari Ini</h2>
+        </div>
+        <div class="slider-arrows desktop-only">
+          <button class="arrow-btn" aria-label="Sebelumnya">
+            <img src="/assets/items/arrow-left.png" alt="Prev" />
+          </button>
+          <button class="arrow-btn" aria-label="Berikutnya">
+            <img src="/assets/items/arrow-right.png" alt="Next" />
+          </button>
+        </div>
+        <div class="movie-row">
+          <div class="movie-card">
+            <img
+              src="/assets/poster-vertikal/poster-vertikal-suzume.png"
+              alt="Suzume"
+            />
+            <span class="badge-episode">Episode Baru</span>
+          </div>
+          <div class="movie-card">
+            <img
+              src="/assets/poster-vertikal/poster-vertikal-jurassic-world.png"
+              alt="Jurassic World"
+            />
+          </div>
+          <div class="movie-card">
+            <img
+              src="/assets/poster-vertikal/poster-vertikal-sonic-2.png"
+              alt="Sonic 2"
+            />
+          </div>
+          <div class="movie-card">
+            <img
+              src="/assets/poster-vertikal/poster-vertikal-all-of-us-are-dead.png"
+              alt="All of Us Are Dead"
+            />
+            <span class="badge-episode">Episode Baru</span>
+          </div>
+          <div class="movie-card">
+            <img
+              src="/assets/poster-vertikal/poster-vertikal-big-hero-6.png"
+              alt="Big Hero 6"
+            />
+          </div>
+          <div class="movie-card">
+            <img
+              src="/assets/poster-vertikal/poster-vertikal-big-hero-6.png"
+              alt="Big Hero 6"
+            />
+          </div>
+          <div class="movie-card">
+            <img
+              src="/assets/poster-vertikal/poster-vertikal-big-hero-6.png"
+              alt="Big Hero 6"
+            />
+          </div>
+          <div class="movie-card">
+            <img
+              src="/assets/poster-vertikal/poster-vertikal-big-hero-6.png"
+              alt="Big Hero 6"
+            />
+          </div>
+          <div class="movie-card">
+            <img
+              src="/assets/poster-vertikal/poster-vertikal-big-hero-6.png"
+              alt="Big Hero 6"
+            />
+          </div>
+          <div class="movie-card">
+            <img
+              src="/assets/poster-vertikal/poster-vertikal-big-hero-6.png"
+              alt="Big Hero 6"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- -------------------------------------------------------------------------- -->
+      <!-- SECTION 4: FILM TRENDING -->
+      <!-- -------------------------------------------------------------------------- -->
+      <section class="movie-row-section">
+        <div class="section-header-row">
+          <h2 class="section-title">Film Trending</h2>
+        </div>
+        <div class="slider-arrows desktop-only">
+          <button class="arrow-btn" aria-label="Sebelumnya">
+            <img src="/assets/items/arrow-left.png" alt="Prev" />
+          </button>
+          <button class="arrow-btn" aria-label="Berikutnya">
+            <img src="/assets/items/arrow-right.png" alt="Next" />
+          </button>
+        </div>
+        <div class="movie-row">
+          <div class="movie-card">
+            <img
+              src="/assets/poster-vertikal/poster-vertikal-the-tomorrow-war.png"
+              alt="The Tomorrow War"
+            />
+            <span class="badge-top">Top 10</span>
+          </div>
+          <div class="movie-card">
+            <img
+              src="/assets/poster-vertikal/poster-vertikal-quantumania.png"
+              alt="Ant-Man Quantumania"
+            />
+            <span class="badge-top">Top 10</span>
+          </div>
+          <div class="movie-card">
+            <img
+              src="/assets/poster-vertikal/poster-vertikal-guardians-of-the-galaxy.png"
+              alt="Guardian of Galaxy"
+            />
+            <span class="badge-top">Top 10</span>
+          </div>
+          <div class="movie-card">
+            <img
+              src="/assets/poster-vertikal/poster-vertikal-a-man-called-otto.png"
+              alt="A Man Called Otto"
+            />
+            <span class="badge-top">Top 10</span>
+          </div>
+          <div class="movie-card">
+            <img
+              src="/assets/poster-vertikal/poster-vertikal-little-mermaid.png"
+              alt="The Little Mermaid"
+            />
+            <span class="badge-top">Top 10</span>
+          </div>
+          <div class="movie-card">
+            <img
+              src="/assets/poster-vertikal/poster-vertikal-little-mermaid.png"
+              alt="The Little Mermaid"
+            />
+            <span class="badge-top">Top 10</span>
+          </div>
+          <div class="movie-card">
+            <img
+              src="/assets/poster-vertikal/poster-vertikal-little-mermaid.png"
+              alt="The Little Mermaid"
+            />
+            <span class="badge-top">Top 10</span>
+          </div>
+          <div class="movie-card">
+            <img
+              src="/assets/poster-vertikal/poster-vertikal-little-mermaid.png"
+              alt="The Little Mermaid"
+            />
+            <span class="badge-top">Top 10</span>
+          </div>
+          <div class="movie-card">
+            <img
+              src="/assets/poster-vertikal/poster-vertikal-little-mermaid.png"
+              alt="The Little Mermaid"
+            />
+            <span class="badge-top">Top 10</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- -------------------------------------------------------------------------- -->
+      <!-- SECTION 5: RILIS BARU -->
+      <!-- -------------------------------------------------------------------------- -->
+      <section class="movie-row-section">
+        <div class="section-header-row">
+          <h2 class="section-title">Rilis Baru</h2>
+        </div>
+        <div class="slider-arrows desktop-only">
+          <button class="arrow-btn" aria-label="Sebelumnya">
+            <img src="/assets/items/arrow-left.png" alt="Prev" />
+          </button>
+          <button class="arrow-btn" aria-label="Berikutnya">
+            <img src="/assets/items/arrow-right.png" alt="Next" />
+          </button>
+        </div>
+        <div class="movie-row">
+          <div class="movie-card">
+            <img
+              src="/assets/poster-vertikal/poster-vertikal-little-mermaid.png"
+              alt="The Little Mermaid"
+            />
+            <span class="badge-top">Top 10</span>
+          </div>
+          <div class="movie-card">
+            <img
+              src="/assets/poster-vertikal/poster-vertikal-duty-after-school.png"
+              alt="Duty After School"
+            />
+            <span class="badge-episode">Episode Baru</span>
+          </div>
+          <div class="movie-card">
+            <img
+              src="/assets/poster-vertikal/poster-vertikal-big-hero-6.png"
+              alt="Big Hero 6"
+            />
+          </div>
+          <div class="movie-card">
+            <img
+              src="/assets/poster-vertikal/poster-vertikal-all-of-us-are-dead.png"
+              alt="All of Us Are Dead"
+            />
+            <span class="badge-episode">Episode Baru</span>
+          </div>
+          <div class="movie-card">
+            <img
+              src="/assets/poster-vertikal/poster-vertikal-missing.png"
+              alt="Missing"
+            />
+          </div>
+          <div class="movie-card">
+            <img
+              src="/assets/poster-vertikal/poster-vertikal-missing.png"
+              alt="Missing"
+            />
+          </div>
+          <div class="movie-card">
+            <img
+              src="/assets/poster-vertikal/poster-vertikal-missing.png"
+              alt="Missing"
+            />
+          </div>
+          <div class="movie-card">
+            <img
+              src="/assets/poster-vertikal/poster-vertikal-missing.png"
+              alt="Missing"
+            />
+          </div>
+          <div class="movie-card">
+            <img
+              src="/assets/poster-vertikal/poster-vertikal-missing.png"
+              alt="Missing"
+            />
+          </div>
+          <div class="movie-card">
+            <img
+              src="/assets/poster-vertikal/poster-vertikal-missing.png"
+              alt="Missing"
+            />
+          </div>
+          <div class="movie-card">
+            <img
+              src="/assets/poster-vertikal/poster-vertikal-missing.png"
+              alt="Missing"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========================================================================== -->
+    <!-- KOMPONEN: FOOTER -->
+    <!-- ========================================================================== -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <div class="logo">
+            <img src="/assets/items/logo-text-movie.png" alt="Logo Chill" />
+          </div>
+          <p>&copy; 2023 Chill All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-links-desktop desktop-only">
+          <div class="genre">
+            <div class="footer-column">
+              <h3>Genre</h3>
+              <ul>
+                <li><a href="#">Aksi</a></li>
+                <li><a href="#">Anak-anak</a></li>
+                <li><a href="#">Anime</a></li>
+                <li><a href="#">Britania</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <ul>
+                <li><a href="#">Drama</a></li>
+                <li><a href="#">Fantasi Ilmiah & Fantasi</a></li>
+                <li><a href="#">Kejahatan</a></li>
+                <li><a href="#">KDrama</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <ul>
+                <li><a href="#">Komedi</a></li>
+                <li><a href="#">Petualangan</a></li>
+                <li><a href="#">Perang</a></li>
+                <li><a href="#">Romantis</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <ul>
+                <li><a href="#">Sains & Alam</a></li>
+                <li><a href="#">Thriller</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="help">
+            <div class="footer-column">
+              <h3>Bantuan</h3>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Kontak Kami</a></li>
+                <li><a href="#">Privasi</a></li>
+                <li><a href="#">Syarat & Ketentuan</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-links-mobile mobile-only">
+          <details class="footer-dropdown">
+            <summary class="footer-summary">
+              Genre <span class="arrow">&gt;</span>
+            </summary>
+            <div class="footer-columns-wrapper">
+              <div class="footer-column">
+                <ul>
+                  <li><a href="#">Aksi</a></li>
+                  <li><a href="#">Anak-anak</a></li>
+                  <li><a href="#">Anime</a></li>
+                  <li><a href="#">Britania</a></li>
+                  <li><a href="#">Drama</a></li>
+                  <li><a href="#">Fantasi Ilmiah & Fantasi</a></li>
+                  <li><a href="#">Kejahatan</a></li>
+                  <li><a href="#">KDrama</a></li>
+                  <li><a href="#">Komedi</a></li>
+                  <li><a href="#">Petualangan</a></li>
+                  <li><a href="#">Perang</a></li>
+                  <li><a href="#">Romantis</a></li>
+                  <li><a href="#">Sains & Alam</a></li>
+                  <li><a href="#">Thriller</a></li>
+                </ul>
+              </div>
+            </div>
+          </details>
+
+          <details class="footer-dropdown">
+            <summary class="footer-summary">
+              Bantuan <span class="arrow">&gt;</span>
+            </summary>
+            <div class="footer-columns-wrapper">
+              <div class="footer-column">
+                <ul>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Kontak Kami</a></li>
+                  <li><a href="#">Privasi</a></li>
+                  <li><a href="#">Syarat & Ketentuan</a></li>
+                </ul>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

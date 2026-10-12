@@ -1,0 +1,834 @@
+@import url("/styles/token.css");
+/* --- 1. RESET & BASE VARIABLES --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background-position: center center;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(24, 26, 28, 1);
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* --- 2. UTILITY CLASSES (DISPLAY TOGGLE) --- */
+.desktop-only {
+  display: none !important;
+}
+
+.mobile-only {
+  display: block !important;
+}
+
+.main-content {
+  gap: 20px;
+}
+
+/* ==========================================================================
+   3. MOBILE STYLES (DEFAULT / LAYAR KECIL)
+   ========================================================================== */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 21px 20px;
+  background-color: rgba(24, 26, 28, 1);
+  border-bottom: 1px solid #22262e;
+  width: 100%;
+  height: max-content;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo img {
+  height: 18px;
+  width: 20px;
+  object-fit: contain;
+}
+
+.main-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.main-nav a {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+}
+
+.user-profile {
+  position: relative;
+}
+
+.avatar-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.arrow-bottom {
+  width: 8px;
+  height: 4.94px;
+}
+
+.avatar-img {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.dropdown-menu {
+  display: none !important;
+}
+
+/* --- Hero Section Mobile --- */
+.hero-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-background {
+  position: relative;
+  width: 100%;
+  height: 225px;
+  background-color: #0b0c0e;
+}
+
+.hero-background img {
+  width: 100%;
+  height: 225px;
+  display: block;
+  object-fit: cover;
+}
+
+.hero-background::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(24, 26, 28, 0.1) 0%,
+    rgba(24, 26, 28, 0.95) 85%,
+    #181a1c 100%
+  );
+  pointer-events: none;
+}
+
+.hero-content {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px 22px;
+  margin: 0;
+  max-width: none;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0;
+  margin-bottom: 12px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.hero-description {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  color: rgba(255, 255, 255, 1);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.hero-bottoms-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn {
+  border-radius: 48px;
+  font-size: 12px;
+  cursor: pointer;
+  border: none;
+  height: 25px;
+  padding: 4px 12px;
+}
+
+.btn-primary {
+  background-color: rgba(15, 30, 147, 1);
+  color: #fff;
+  font-weight: 300;
+}
+
+.btn-secondary {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  gap: 2.5px;
+  font-weight: 300;
+}
+
+.badge-age {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(193, 194, 196, 1);
+  font-size: 12px;
+  padding: 3px 6px;
+  border-radius: 24px;
+  font-weight: bold;
+}
+
+.volume-btn {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Movie Row Section Mobile */
+.movie-row-section {
+  padding: 20px 0 20px 20px;
+}
+
+.section-header-row {
+  margin-bottom: 12px;
+  padding-right: 16px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0;
+  margin-bottom: 20px;
+}
+
+.slider-arrows {
+  display: none;
+}
+
+.movie-row {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 8px;
+  scrollbar-width: none;
+}
+
+.movie-row::-webkit-scrollbar {
+  display: none;
+}
+
+.movie-continue {
+  gap: 24px;
+}
+
+/* --- Styling Continue Card (Horizontal) --- */
+.continue-card {
+  flex: 0 0 309px;
+  width: 309px;
+  height: 151px;
+  position: relative;
+  border-radius: 4.37px;
+  overflow: hidden;
+  background-color: #1e222b;
+}
+
+.continue-card img {
+  width: 309px;
+  height: 151px;
+  object-fit: cover;
+  display: block;
+  border-radius: 4.37px;
+}
+
+.badge-episode-horizontal {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(15, 30, 147, 1);
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 3px 6px;
+  border-radius: 12px;
+  z-index: 2;
+}
+
+/* --- Styling Movie Card (Vertikal Lainnya) --- */
+.movie-card {
+  flex: 0 0 95.6px;
+  width: 95.6px;
+  height: 143.39px;
+  position: relative;
+  border-radius: 3.82px;
+  overflow: hidden;
+  background-color: #1e222b;
+}
+
+.movie-card img {
+  width: 95.6px;
+  height: 143.39px;
+  object-fit: cover;
+  display: block;
+  border-radius: 3.82px;
+}
+
+.badge-episode,
+.badge-top {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(15, 30, 147, 1);
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 3px 6px;
+  border-radius: 12px;
+  z-index: 2;
+}
+
+.badge-top {
+  background-color: rgba(183, 31, 29, 1);
+}
+
+.wrapper-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, transparent 100%);
+  padding: 10px 8px 8px 8px;
+}
+
+.movie-info {
+  display: flex;
+  justify-content: space-between;
+  line-height: 2;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.movie-title {
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.movie-rating {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+/* Footer Mobile */
+.site-footer {
+  background-color: rgba(24, 26, 28, 1);
+  padding: 20px;
+  margin-top: 7px;
+  width: 100%;
+  border-top: 1px solid rgba(231, 227, 252, 0.23);
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 10px 10px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.footer-brand .logo {
+  display: flex;
+  align-items: center;
+  height: 24px;
+}
+
+.footer-brand .logo img {
+  height: 24px;
+  width: auto;
+  object-fit: contain;
+}
+
+.footer-brand p {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.footer-links-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.footer-dropdown {
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.footer-summary {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 4px 0;
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-summary::-webkit-details-marker {
+  display: none;
+}
+
+.footer-summary .arrow {
+  font-size: 13px;
+  color: var(--text-muted);
+  transition: transform 0.3s ease;
+}
+
+.footer-dropdown[open] .footer-summary .arrow {
+  transform: rotate(90deg);
+}
+
+.footer-columns-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+  padding-left: 6px;
+}
+
+.footer-column ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-column ul li a {
+  font-size: 13px;
+  color: var(--text-muted);
+  transition: color 0.2s;
+}
+
+.footer-column ul li a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+
+/* ==========================================================================
+   4. DESKTOP MEDIA QUERIES (min-width: 1024px)
+   ========================================================================== */
+@media (min-width: 1024px) {
+  .desktop-only {
+    display: flex !important;
+  }
+
+  .mobile-only {
+    display: none !important;
+  }
+
+  /* Header Desktop */
+  .site-header {
+    width: 100%;
+    height: 94px;
+    padding: 25px 80px;
+  }
+
+  .header-container {
+    padding: 0;
+  }
+
+  .header-nav {
+    gap: 80px;
+  }
+
+  .logo img {
+    height: 32px;
+    width: auto;
+  }
+
+  .main-nav ul {
+    gap: 80px;
+  }
+
+  .main-nav a {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 0.2px;
+  }
+
+  .avatar-img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .avatar-dropdown {
+    gap: 10px;
+    padding: 0px 2px;
+  }
+
+  .arrow-bottom {
+    width: 14px;
+    height: 8.65px;
+  }
+
+  /* --- Hero Section Desktop --- */
+  .hero-section {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-background {
+    width: 100%;
+    height: 587px;
+    margin-top: auto;
+  }
+
+  .hero-background img {
+    width: 100%;
+    height: 587px;
+    object-fit: cover;
+  }
+
+  .hero-content {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 80px 80px;
+    box-sizing: border-box;
+  }
+
+  .hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    max-width: 900px;
+    letter-spacing: 0px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-line-clamp: 3;
+    margin-bottom: 40px;
+    max-width: 750px;
+  }
+
+  .hero-bottoms-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .btn {
+    height: 44px;
+    padding: 10px 32px;
+    font-size: 14px;
+    border-radius: 48px;
+  }
+
+  .badge-age {
+    font-size: 14px;
+    padding: 6px 14px;
+    border-radius: 24px;
+  }
+
+  .volume-btn {
+    width: 44px;
+    height: 44px;
+  }
+
+  .volume-btn img {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Movie Row Section Desktop & Card Layout */
+  .movie-row-section {
+    padding: 25px 80px;
+    position: relative;
+  }
+
+  .section-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 0;
+    margin-bottom: 16px;
+  }
+
+  .section-title {
+    font-size: 32px;
+    line-height: 1.1;
+    letter-spacing: 0;
+    font-weight: 700;
+    margin-bottom: 32px;
+  }
+
+  /* --- TATALETAK TOMBOL ARROW --- */
+  .slider-arrows {
+    display: flex;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 60px;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .arrow-btn {
+    background: rgba(47, 51, 52, 1);
+    border: 1px solid rgba(231, 227, 252, 0.23);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+    pointer-events: auto;
+  }
+
+  .arrow-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .arrow-btn img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .movie-row {
+    display: flex;
+    gap: 28px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+
+  .movie-continue {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    gap: 24px;
+  }
+
+  /* --- UKURAN & BORDER RADIUS CONTINUE CARD (HORIZONTAL) --- */
+  .continue-card {
+    flex: 0 0 302px;
+    width: 302px;
+    height: 162px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    background-color: #1e222b;
+  }
+
+  .continue-card img {
+    width: 302px;
+    height: 162px;
+    border-radius: 8px;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* --- UKURAN & BORDER RADIUS MOVIE CARD (VERTIKAL) --- */
+  .movie-card {
+    flex: 0 0 234px;
+    width: 234px;
+    height: 365px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    background-color: #1e222b;
+  }
+
+  .movie-card img {
+    width: 234px;
+    height: 365px;
+    border-radius: 8px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .movie-title {
+    font-size: 13px;
+  }
+
+  .movie-rating {
+    font-size: 12px;
+  }
+
+  .badge-episode,
+  .badge-top {
+    font-size: 11px;
+    padding: 4px 8px;
+    top: 12px;
+    left: 12px;
+  }
+
+  /* Footer Desktop */
+  .site-footer {
+    padding: 60px 80px;
+    margin-top: 40px;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-brand {
+    max-width: 280px;
+    gap: 26px;
+  }
+
+  .footer-brand .logo img {
+    width: 163px;
+    height: 44px;
+  }
+
+  .footer-brand p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.4px;
+    letter-spacing: 0px;
+  }
+
+  .footer-links-desktop {
+    display: flex;
+    flex-direction: row;
+    gap: 160px;
+  }
+
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .genre > .footer-column:not(:first-child) {
+    padding-top: 39px;
+  }
+
+  .footer-column h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .footer-column ul {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+
+  .footer-column ul li a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+    color: rgba(193, 194, 196, 1);
+    transition: color 0.2s;
+  }
+
+  .footer-column ul li a:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .genre {
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+  }
+}

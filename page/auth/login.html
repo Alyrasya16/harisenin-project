@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masuk - CHILL</title>
+    <link rel="stylesheet" href="/styles/auth/login.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+  <body>
+    <main class="login-container">
+      <div class="login-card">
+        <!-- Logo Perusahaan -->
+        <div class="brand-logo">
+          <img src="/assets/items/logo-text-movie.png" alt="Logo Movie Chill" />
+        </div>
+
+        <!-- Header Teks Form -->
+        <div class="header-login">
+          <h2>Masuk</h2>
+          <p>Selamat datang kembali!</p>
+        </div>
+
+        <!-- Form Login Utama -->
+        <form action="" method="POST" class="login-form">
+          <!-- Input Username -->
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Masukkan username"
+              required
+            />
+          </div>
+
+          <!-- Input Password -->
+          <div class="form-group">
+            <label for="password">Kata Sandi</label>
+            <div class="input-password-wrapper">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Masukkan kata sandi"
+                required
+                class="input-password"
+              />
+              <button
+                type="button"
+                class="toggle-password"
+                aria-label="Tampilkan Kata Sandi"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.98 8.223A10.477 10.477 0 0 0 1.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.451 10.451 0 0 1 12 4.5c4.756 0 8.773 3.162 10.065 7.498a10.522 10.522 0 0 1-4.293 5.774M6.228 6.228 3 3m3.228 3.228 3.65 3.65m7.894 7.894L21 21m-3.228-3.228-3.65-3.65m0 0a3 3 0 1 0-4.243-4.243m4.242 4.242L9.88 9.88"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Tautan Navigasi (Daftar & Lupa Password) -->
+          <div class="register-redirect">
+            <span class="register-text">
+              Belum punya akun?
+              <a href="register.html" class="register-link"
+                >Daftar</a
+              >
+            </span>
+            <a href="#" class="forget-password"
+              >Lupa kata sandi?</a
+            >
+          </div>
+
+          <!-- Tombol Aksi Utama -->
+          <button type="submit" class="btn-primary">
+            Masuk
+          </button>
+        </form>
+
+        <!-- Pemisah / Divider -->
+        <div class="divider">
+          <span>Atau</span>
+        </div>
+
+        <!-- Tombol Login Google -->
+        <button type="button" class="btn-google">
+          <img
+            src="/assets/items/google-icon.png"
+            alt="Google Logo"
+            class="google-icon"
+          />
+          <span>Masuk dengan Google</span>
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
