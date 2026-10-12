@@ -1,5 +1,5 @@
 @import url("/styles/token.css");
-/* --- 1. RESET & BASE VARIABLES --- */
+/* 1. RESET & BASE VARIABLES */
 * {
   margin: 0;
   padding: 0;
@@ -37,9 +37,7 @@ ul {
   gap: 20px;
 }
 
-/* ==========================================================================
-   3. MOBILE STYLES (DEFAULT / LAYAR KECIL)
-   ========================================================================== */
+/* 3. MOBILE STYLES (DEFAULT / LAYAR KECIL) */
 
 .site-header {
   position: sticky;
@@ -481,10 +479,8 @@ ul {
   color: rgba(255, 255, 255, 1);
 }
 
+/* 4. DESKTOP MEDIA QUERIES (min-width: 1024px) */
 
-/* ==========================================================================
-   4. DESKTOP MEDIA QUERIES (min-width: 1024px)
-   ========================================================================== */
 @media (min-width: 1024px) {
   .desktop-only {
     display: flex !important;
